@@ -1,8 +1,8 @@
 ---
 summary: 'Use SVG icons sets to create a small layout with different icons.'
-time: '2 hours'
-deliverables: '1 HTML file, 4 CSS files, images'
-download: 'https://assets.learn-the-web.algonquindesign.ca/web-dev-3/svg-icon-sets-download.zip'
+time: '1 hour'
+deliverables: '1 HTML file, 1 CSS file, images'
+download: 'https://assets.learn-the-web.algonquindesign.ca/web-design-3/svg-icon-sets-download.zip'
 ---
 
 # SVG icon sets
@@ -20,11 +20,14 @@ download: 'https://assets.learn-the-web.algonquindesign.ca/web-dev-3/svg-icon-se
 ## Details
 
 - *Typefaces:* `Overpass` (regular & bold)
-- *Colours:* `#fff`, `#ff9500`, `#ff5e3a`, `rgba(255, 255, 255, 1)` (with the alpha adjusted)
-- *Icon size CSS class:* `.i-192`
-- *Gridifier settings:* defaults
-- *Typografier settings:* defaults
-- *Modulifier settings:* select all
+- *Colours:* `#fff`, `#ff9500`, `#ff5e3a`, `rgba(255, 255, 255, .7)`
+- *Icon sizes:* `8rem`
+- *Line-heights:* `1.5`
+- *Font-sizes:* `2rem`, `1.5rem`, `1.125rem`
+- *Gaps:* `6vmin`
+- *Margins:* `1.5rem`
+- *Paddings:* `6vmin`, `1rem`
+- *Border thicknesses:* `.2rem`
 
 ---
 
@@ -33,7 +36,6 @@ download: 'https://assets.learn-the-web.algonquindesign.ca/web-dev-3/svg-icon-se
 Visually match the images in the “screenshots” folder and create the interaction shown in the linked video.
 
 - Final screenshots in the “screenshots” folder.
-- [**Watch this video to see how it interacts.**](https://youtu.be/gIQtPYJ2d3s)
 
 ---
 

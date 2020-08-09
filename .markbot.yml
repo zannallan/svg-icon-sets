@@ -1,61 +1,52 @@
-repo: 'svg-icon-sets'
-canvasCourse: 'web-dev-3'
+repo: "svg-icon-sets"
+canvasCourse: "web-design-3"
 
 inherit:
   - naming-restrict-live
   - git-2
   - html
   - css
-  - modulifier
-  - gridifier
-  - typografier
-  - css-order-modules-grid-type-main
+  - body-margin-0
   - google-fonts
 
 html:
-  - path: 'index.html'
+  - path: "index.html"
     outline: false
     has:
-      - ['link[href*="Overpass"]', 'The Google Font, `Overpass` (regular & bold) is missing']
-      - 'i > svg > use'
-      - 'section'
-      - '.grid > .unit'
-      - '.icon.i-192'
-      - 'h2'
+      - [
+          'link[href*="Overpass"]',
+          "The Google Font, `Overpass` (regular & bold) is missing",
+        ]
+      - "i > svg > use"
+      - "section"
+      - "h2"
+      - "h3"
+      - ".icon"
     hasNot:
-      - 'img'
+      - "img"
     search:
-      - 'max-length'
-      - 'Mars colonization structures'
-      - 'Space bubbles'
-      - 'Super domes'
-      - 'Mecha-stilts'
-      - 'Learn about'
+      - "Mars colonization structures"
+      - "Space bubbles"
+      - "Super domes"
+      - "Mecha-stilts"
+      - "Learn about"
 
 css:
-  - path: 'css/main.css'
+  - path: "css/main.css"
     has:
-      - ['html', 'font-family', 'Overpass, sans-serif']
-      - ['@60']
+      - ["html", "font-family", "Overpass, sans-serif"]
+      - ["html", "text-size-adjust", "100%"]
+      - ["html", "-webkit-text-size-adjust", "100%"]
+      - ["@38"]
     search:
-      - '#fff'
-      - '#ff9500'
-      - '#ff5e3a'
-      - 'rgba\(255, 255, 255'
+      - "#fff"
+      - "#ff9500"
+      - "#ff5e3a"
       - 'background-image: linear-gradient\('
-      - 'btn:hover'
+      - ":hover"
+      - "display: grid"
+      - "display: flex"
 
 screenshots:
-  - path: 'index.html'
-    sizes: [320, 400, 608, 960, 1440]
-
-functionality:
-  - path: 'index.html'
-    test: |
-      const btn = $('.grid > .unit:nth-child(3) .btn-ghost');
-      const oldBg = css(btn).backgroundColor;
-
-      hover(btn, () => {
-        if (oldBg == css(btn).backgroundColor) return fail('The background colour of the button doesn’t change when hovered');
-        pass();
-      });
+  - path: "index.html"
+    sizes: [320, 608, 1440]
